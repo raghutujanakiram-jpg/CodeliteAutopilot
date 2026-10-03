@@ -1,0 +1,7 @@
+{
+  "name": "Codelite AutoPilot",
+  "description": "AI marketing and sales automation platform website with interactive tools and channel workflows.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
