@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform — Design, Channels, Connect &amp; Auto-Post | Codelite AutoPilot</title>
+<meta name="description" content="Inside the Codelite AutoPilot platform: brand asset generation, a 12-channel directory, the Connect Profiles dashboard and the auto-post execution engine.">
+<meta name="theme-color" content="#0a2145">
+<link rel="icon" href="images/codelite-autopilot-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__note"><span class="dot-live" aria-hidden="true"></span> Engine status: <strong style="color:#fff">all 12 channels connected</strong> · last sync 4 min ago</span>
+    <div class="topbar__meta">
+      <a href="tel:+919949456564"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> 99494 56564</a>
+      <a href="mailto:contact@codelitelabs.app"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg> contact@codelitelabs.app</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Codelite AutoPilot home">
+      <img class="brand__logo" src="images/codelite-autopilot-logo.png" alt="Codelite AutoPilot" width="250" height="167">
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="index.html">Home</a></li>
+        <li><a class="main-nav__link" href="platform.html" aria-current="page">Platform</a></li>
+        <li><a class="main-nav__link" href="solutions.html">Solutions</a></li>
+        <li><a class="main-nav__link" href="resources.html">Resources</a></li>
+        <li><a class="main-nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--outline btn--sm" href="contact.html#sales">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 18.5V4Z"/></svg>
+        Talk to sales
+      </a>
+      <button class="btn btn--primary btn--sm" type="button" data-modal-open="demo-modal" aria-haspopup="dialog">Book a demo</button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="site-drawer" data-open="false" aria-label="Mobile navigation" aria-hidden="true">
+  <div class="drawer__head">
+    <strong style="color:var(--navy-900)">Menu</strong>
+    <button class="modal__close" id="drawer-close" type="button" aria-label="Close navigation menu">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer__body">
+    <a class="drawer__link" href="index.html">Home <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="platform.html" aria-current="page">Platform <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="solutions.html">Solutions <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="resources.html">Resources <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="contact.html">Contact <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <div style="display:grid;gap:.6rem;margin-top:1.25rem">
+      <button class="btn btn--primary btn--block" type="button" data-modal-open="demo-modal">Book a demo</button>
+      <a class="btn btn--outline btn--block" href="contact.html#sales">Talk to sales</a>
+    </div>
+    <div class="drawer__contact">
+      <a href="tel:+919949456564"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> +91 99494 56564</a>
+      <a href="mailto:contact@codelitelabs.app"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg> contact@codelitelabs.app</a>
+    </div>
+  </div>
+</aside>
+<button class="scrim" id="scrim" data-open="false" type="button" tabindex="-1" aria-label="Close navigation overlay"></button>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page">Platform</li>
+        </ol>
+      </nav>
+      <div class="page-hero__inner">
+        <p class="eyebrow">Platform</p>
+        <h1>One engine, four stages, no hand-offs</h1>
+        <p class="lead">AutoPilot is deliberately linear. Design produces assets, Create expands them to channels, Connect wires the accounts, Auto-post executes the calendar. Jump to any stage below.</p>
+        <div class="btn-row" style="margin-top:1.25rem">
+          <a class="btn btn--outline" href="#design">01 · Design</a>
+          <a class="btn btn--outline" href="#channels">02 · Create</a>
+          <a class="btn btn--outline" href="#connect">03 · Connect</a>
+          <a class="btn btn--primary" href="#autopost">04 · Auto-post</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== STAGE 1 — DESIGN ====================== -->
+  <section class="section" id="design">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stage 01 · Design</p>
+        <h2>Brand asset generation</h2>
+        <p class="lead">The interface takes a business name, a deliverable chosen from a dropdown, and a short brief. Everything is generated onto your existing palette — or one AutoPilot proposes from your sector.</p>
+      </div>
+
+      <div class="split split--wide-left">
+        <div class="panel panel--flush">
+          <div style="padding:clamp(1.25rem,2.5vw,2rem)">
+            <div class="form-grid">
+              <div class="field">
+                <label for="gen-name">Business name</label>
+                <input class="input" id="gen-name" type="text" value="Kettle &amp; Co" readonly>
+                <span class="hint">Read-only sample from an active workspace.</span>
+              </div>
+              <div class="field">
+                <label for="gen-asset">Design anything with AI</label>
+                <select class="select" id="gen-asset">
+                  <option value="logo">Logo system &amp; lockups</option>
+                  <option value="landing">Website landing page</option>
+                  <option value="card">Business card</option>
+                  <option value="digital-card">Digital business card</option>
+                  <option value="note">Note card</option>
+                  <option value="letterhead">Letterhead</option>
+                  <option value="signature">Email signature</option>
+                  <option value="invoice">Invoice template</option>
+                  <option value="animation">Short animation</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="gen-brief">Creative brief</label>
+                <textarea class="textarea" id="gen-brief" rows="3">Warm, hand-made tone. Kerala-sourced spices. Show the product on a linen surface with morning light.</textarea>
+                <span class="err"></span>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn--primary" type="button" id="gen-run">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/></svg>
+                Select asset
+              </button>
+              <button class="btn btn--ghost" type="button" id="gen-clear">Clear brief</button>
+            </div>
+            <div class="note" style="margin-top:1rem" id="gen-status" aria-live="polite">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <span id="gen-status-text">Choose a deliverable and press <strong>Select asset</strong> to queue a generation job. In a live workspace the job returns in about 40 seconds.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <h3>What one brief produces</h3>
+          <p>The same brand kit drives all ten deliverable families, so a logo update propagates to the invoice template without a designer revisiting every file.</p>
+          <div class="grid grid-2">
+            <div class="stat"><div class="stat__value" data-count="10" data-suffix=" families">0</div><div class="stat__label">Core deliverables</div></div>
+            <div class="stat"><div class="stat__value" data-count="40" data-suffix="s">0</div><div class="stat__label">Average generation time</div></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></span>
+            <div><h4>Palette and type locking</h4><p>Approve once; every subsequent asset respects the lock unless you unlock it deliberately.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M8 12h8"/></svg></span>
+            <div><h4>Print and digital exports</h4><p>CMYK PDF for print, SVG and PNG for digital, plus editable source files on request.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery" style="margin-top:clamp(2rem,4vw,3rem)">
+        <figure>
+          <button class="media-zoom media media--4x3" type="button" data-caption="Logo systems generated across twelve lockup variants.">
+            <img src="images/software-office.jpg" alt="Brand identity and logo work displayed in a design studio" width="600" height="450" loading="lazy">
+          </button>
+          <figcaption>Logo systems<span>12 lockup variants</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--4x3" type="button" data-caption="Landing page compositions built from your brand kit.">
+            <img src="images/ai-dashboard.jpg" alt="Website landing page composition shown on a monitor" width="600" height="450" loading="lazy">
+          </button>
+          <figcaption>Landing pages<span>Responsive sections</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--4x3" type="button" data-caption="Stationery family including business cards and note cards.">
+            <img src="images/content-flatlay.png" alt="Business card and note card templates arranged on a desk" width="600" height="450" loading="lazy">
+          </button>
+          <figcaption>Stationery family<span>Cards, letterhead, invoices</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== STAGE 2 — CHANNELS ==================== -->
+  <section class="section section--alt section--edge" id="channels">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stage 02 · Create</p>
+        <h2>Social &amp; community channel expansion</h2>
+        <p class="lead">Twelve integrations in two groups: seven major social platforms and five community channels. Filter the directory to see what each one supports.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-bar__group">
+          <label for="channel-search">Find a channel</label>
+          <span class="search-field">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input class="input" id="channel-search" type="search" placeholder="Search social, community, ads…" data-channel-filter="channel-directory" aria-describedby="channel-count">
+          </span>
+        </div>
+        <span class="result-count" id="channel-count" data-channel-count role="status">12 of 12 channels shown</span>
+      </div>
+
+      <div class="channel-grid" id="channel-directory">
+        <div class="channel" data-name="Facebook Pages" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 8h-2a2 2 0 0 0-2 2v6M9 12h5"/></svg><div><b>Facebook Pages</b><span>Posts, reels, events</span></div></div>
+        <div class="channel" data-name="Instagram Business" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg><div><b>Instagram Business</b><span>Feed, reels, stories</span></div></div>
+        <div class="channel" data-name="X (Twitter)" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5l16 7-16 7 3-7-3-7Z"/></svg><div><b>X (Twitter)</b><span>Threads, replies</span></div></div>
+        <div class="channel" data-name="LinkedIn" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8h.01M12 16v-3a2 2 0 0 1 4 0v3"/></svg><div><b>LinkedIn</b><span>Company + personal</span></div></div>
+        <div class="channel" data-name="Pinterest" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg><div><b>Pinterest</b><span>Pins, idea boards</span></div></div>
+        <div class="channel" data-name="Threads" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="3"/><path d="M9 3v3M15 3v3"/></svg><div><b>Threads</b><span>Text, carousels</span></div></div>
+        <div class="channel" data-name="TikTok Business" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/></svg><div><b>TikTok Business</b><span>Short video, trends</span></div></div>
+        <div class="channel" data-name="Google Business Profile" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 14l2.5 5L18 8"/></svg><div><b>Google Business Profile</b><span>Posts, reviews, offers</span></div></div>
+        <div class="channel" data-name="YouTube Shorts" data-group="social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="m11 9 4 3-4 3V9Z"/></svg><div><b>YouTube Shorts</b><span>Shorts, descriptions</span></div></div>
+        <div class="channel" data-name="Discord" data-group="community"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 9.5 17 14.5"/></svg><div><b>Discord</b><span>Announcements, drops</span></div></div>
+        <div class="channel" data-name="Telegram" data-group="community"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 10-15Z"/></svg><div><b>Telegram</b><span>Broadcast lists</span></div></div>
+        <div class="channel" data-name="Slack" data-group="community"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 10h8M8 14h5"/></svg><div><b>Slack</b><span>Internal + customer channels</span></div></div>
+        <div class="channel channel--planned" data-name="WhatsApp Business broadcasts" data-group="community"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13 8L3 21l1-5a9 9 0 1 1 17-4Z"/><path d="M9 10a4 4 0 0 0 5 5l1-1-2-1-1 1a3 3 0 0 1-2-2l1-1-1-2Z"/></svg><div><b>WhatsApp broadcasts</b><span>Pilot — 6 accounts</span></div></div>
+      </div>
+      <p class="empty-state" data-channel-empty hidden style="margin-top:1rem">
+        <strong>No channel matches that search.</strong> Try "social", "community", "reels" or clear the field.
+      </p>
+
+      <div class="grid grid-2" style="margin-top:clamp(2rem,4vw,3rem)">
+        <div class="panel">
+          <h3>Major social platforms</h3>
+          <p style="font-size:var(--step--1)">Nine integrations tuned for reach: platform-native aspect ratios, first-comment hashtag sets, and per-channel posting windows derived from your historical engagement.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Native media specs per platform</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Best-time scheduling from your data</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-retry on API throttling</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Community channel integration</h3>
+          <p style="font-size:var(--step--1)">Dedicated modules for the places your customers already talk, with tone switching — transactional on Slack, conversational on Discord, broadcast on Telegram.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Announcement and drop templates</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Thread-aware follow-up replies</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Escalation to a human on sentiment drop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= STAGE 3 — CONNECT ==================== -->
+  <section class="section" id="connect">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stage 03 · Connect</p>
+        <h2>The Connect Profiles dashboard</h2>
+        <p class="lead">Every account is authenticated once, then mapped to the central engine. The engine reads performance and writes content back through the same mapping, so a channel swap takes one click, not a project.</p>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3 style="margin-bottom:.35rem">Unified pipeline synchronisation</h3>
+          <p style="font-size:var(--step--1);color:var(--ink-3)">All twelve profiles must report <strong>connected</strong> before automation can be armed on that channel. Partially connected workspaces publish only to the healthy channels.</p>
+          <div class="datalist" role="table" aria-label="Channel connection status">
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">Instagram Business · @kettleandco</span>
+              <span class="datarow__value" role="cell"><span class="badge badge--green">Connected</span></span>
+              <span class="datarow__meta" role="cell">Token healthy · refresh in 41 days · 18 posts scheduled</span>
+            </div>
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">LinkedIn · Kettle &amp; Co</span>
+              <span class="datarow__value" role="cell"><span class="badge badge--green">Connected</span></span>
+              <span class="datarow__meta" role="cell">Token healthy · refresh in 27 days · 9 posts scheduled</span>
+            </div>
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">X (Twitter) · @kettleco</span>
+              <span class="datarow__value" role="cell"><span class="badge badge--green">Connected</span></span>
+              <span class="datarow__meta" role="cell">Token healthy · refresh in 12 days · 24 posts scheduled</span>
+            </div>
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">TikTok Business · kettleandco</span>
+              <span class="datarow__value" role="cell"><span class="badge badge--orange">Action needed</span></span>
+              <span class="datarow__meta" role="cell">Re-authentication required — access expired 2 days ago</span>
+            </div>
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">Google Business Profile · Chennai</span>
+              <span class="datarow__value" role="cell"><span class="badge badge--green">Connected</span></span>
+              <span class="datarow__meta" role="cell">Review sync on · 3 new reviews awaiting reply</span>
+            </div>
+            <div class="datarow" role="row">
+              <span class="datarow__title" role="cell">WhatsApp broadcasts</span>
+              <span class="datarow__value" role="cell"><span class="badge">Pilot</span></span>
+              <span class="datarow__meta" role="cell">Invite-only pilot — request access from your account manager</span>
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:1.25rem">
+            <a class="btn btn--primary btn--sm" href="contact.html#demo">Connect my channels</a>
+            <a class="btn btn--outline btn--sm" href="#integrations">See integration list</a>
+          </div>
+        </div>
+
+        <div class="stack">
+          <figure class="media media--4x3" style="margin:0">
+            <button class="media-zoom" type="button" data-caption="External profiles linked to the central AutoPilot engine.">
+              <img src="images/ai-dashboard.jpg" alt="Dashboard showing external social profiles mapped to a central automation engine" width="800" height="600" loading="lazy">
+            </button>
+          </figure>
+          <div class="feature-row">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <div><h4>One mapping layer</h4><p>Content, leads and reporting all address channels by internal ID, so reconnecting an account never orphans a campaign.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><h4>Scoped permissions</h4><p>AutoPilot requests publish and read-insights scopes only. It never asks for direct-message access unless you enable inbox automation.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
+            <div><h4>Health monitoring</h4><p>Expiring tokens, rate limits and failed publishes raise an alert in Slack and email before a slot is missed.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== STAGE 4 — AUTO-POST =================== -->
+  <section class="section section--navy" id="autopost">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stage 04 · Auto-post</p>
+        <h2>The execution engine</h2>
+        <p class="lead">This is where AutoPilot stops being a content tool and starts being an operating system for your marketing week.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card card--dark reveal">
+          <span class="icon icon--dark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M8 12h8M8 16h5"/></svg></span>
+          <h3>Automated content generation</h3>
+          <p>Auto-generates posts, reels, carousels and captions against an industry-specific AI content calendar, then holds them in a review queue that matches your approval policy.</p>
+        </article>
+        <article class="card card--dark reveal">
+          <span class="icon icon--dark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+          <h3>SEO &amp; ad copy tools</h3>
+          <p>Provides SEO-focused blog ideas and outlines with keyword clusters, plus ad copy variants for Meta and Google with headline testing notes and predicted intent match.</p>
+        </article>
+        <article class="card card--dark reveal">
+          <span class="icon icon--dark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
+          <h3>Global market scalability</h3>
+          <p>Supports multi-language output tailored to local markets — same campaign, six languages, region-correct imagery, currency and festival timing.</p>
+        </article>
+      </div>
+
+      <div class="panel panel--flush" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.16);margin-top:clamp(1.5rem,3vw,2.5rem)">
+        <div style="padding:clamp(1.25rem,2.5vw,2rem)">
+          <h3 style="font-size:var(--step-2)">A working week inside the engine</h3>
+          <div class="table-wrap" style="background:transparent;border-color:rgba(255,255,255,.16)">
+            <table class="data" style="min-width:600px">
+              <caption>Sample automation schedule for a Growth-plan workspace. Times are IST.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Trigger</th>
+                  <th scope="col">Condition</th>
+                  <th scope="col">AutoPilot action</th>
+                  <th scope="col">Channels</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="row-head">Daily 08:30</td>
+                  <td>Always</td>
+                  <td>Publish the approved slot from the 30-day calendar</td>
+                  <td>All connected</td>
+                </tr>
+                <tr>
+                  <td class="row-head">Daily 22:00</td>
+                  <td>Cost per lead above target for 3 days</td>
+                  <td>Pause the fatigued creative and swap in the next best hook</td>
+                  <td>Meta, Google</td>
+                </tr>
+                <tr>
+                  <td class="row-head">Tuesday 07:00</td>
+                  <td>New lead scored above 70</td>
+                  <td>Send the stage-one nurture sequence and alert the owner</td>
+                  <td>Email, Slack</td>
+                </tr>
+                <tr>
+                  <td class="row-head">Thursday 16:00</td>
+                  <td>Engagement rate up 15% week on week</td>
+                  <td>Clone the winning format into two new variants for next week</td>
+                  <td>Instagram, LinkedIn</td>
+                </tr>
+                <tr>
+                  <td class="row-head">1st of month</td>
+                  <td>Always</td>
+                  <td>Assemble the performance narrative and export the CSV pack</td>
+                  <td>Workspace report</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-scroll-hint">Scroll horizontally to see every column.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== INTEGRATIONS & COMPARISON ============= -->
+  <section class="section section--alt section--edge" id="integrations">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Integration surface</p>
+        <h2>What AutoPilot reads, writes and never touches</h2>
+        <p class="lead">Use the toggle to collapse the comparison to the AutoPilot columns only — handy on a phone screen.</p>
+      </div>
+
+      <div class="filter-bar">
+        <span class="result-count">Comparison: manual stack vs. AutoPilot vs. point tools</span>
+        <button class="chip" type="button" id="priority-toggle" data-table-priority="comparison-table" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h6"/></svg>
+          AutoPilot columns only
+        </button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data" id="comparison-table">
+          <caption>Capability comparison across a typical marketing stack. AutoPilot columns are marked.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Capability</th>
+              <th scope="col">Manual stack</th>
+              <th scope="col" data-priority>AutoPilot</th>
+              <th scope="col">Single-purpose tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-head">Brand asset generation</td>
+              <td><span class="mark-no">Designer hours</span></td>
+              <td data-priority><span class="mark-yes">10 families, ~40s each</span></td>
+              <td><span class="mark-no">Template only</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Channels supported</td>
+              <td><span class="mark-no">1–3, manual</span></td>
+              <td data-priority><span class="mark-yes">12 connected</span></td>
+              <td><span class="mark-no">3–5 typical</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Content calendar generation</td>
+              <td><span class="mark-no">Spreadsheet</span></td>
+              <td data-priority><span class="mark-yes">Industry-specific, 30 days</span></td>
+              <td><span class="mark-no">Blank scheduler</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Approval chain</td>
+              <td><span class="mark-no">Over chat</span></td>
+              <td data-priority><span class="mark-yes">Per-channel policy</span></td>
+              <td><span class="mark-no">Usually single user</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Lead scoring</td>
+              <td><span class="mark-no">Not available</span></td>
+              <td data-priority><span class="mark-yes">14 signals, live</span></td>
+              <td><span class="mark-no">Form captures only</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Multi-language output</td>
+              <td><span class="mark-no">External agency</span></td>
+              <td data-priority><span class="mark-yes">6 Indian languages</span></td>
+              <td><span class="mark-no">Add-on cost</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Attribution window</td>
+              <td><span class="mark-no">Last click</span></td>
+              <td data-priority><span class="mark-yes">Up to 90 days</span></td>
+              <td><span class="mark-no">7–30 days</span></td>
+            </tr>
+            <tr>
+              <td class="row-head">Data ownership &amp; export</td>
+              <td><span class="mark-yes">Yours</span></td>
+              <td data-priority><span class="mark-yes">Yours, open formats</span></td>
+              <td><span class="mark-no">Platform-locked</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-scroll-hint">Scroll horizontally to compare every column.</p>
+
+      <div class="grid grid-3" style="margin-top:clamp(2rem,4vw,3rem)">
+        <div class="panel">
+          <span class="badge badge--purple">Reads</span>
+          <h4 style="margin-top:.6rem">Performance &amp; catalogue data</h4>
+          <p style="font-size:var(--step--1)">Meta Ads, Google Ads, Google Analytics, Shopify and WooCommerce catalogues, plus channel-level insights from all twelve publish targets.</p>
+        </div>
+        <div class="panel">
+          <span class="badge badge--orange">Writes</span>
+          <h4 style="margin-top:.6rem">Content &amp; customer updates</h4>
+          <p style="font-size:var(--step--1)">Scheduled posts and reels, Google Business offers and review replies, CRM notes and pipeline stages, plus invoices on closed deals.</p>
+        </div>
+        <div class="panel">
+          <span class="badge">Never touches</span>
+          <h4 style="margin-top:.6rem">Private messages &amp; passwords</h4>
+          <p style="font-size:var(--step--1)">AutoPilot never stores platform passwords, never reads direct messages unless inbox automation is explicitly enabled, and never sells workspace data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== GOVERNANCE ======================= -->
+  <section class="section" id="governance">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <p class="eyebrow">Governance</p>
+        <h2>Controls your finance and brand teams will ask about</h2>
+      </div>
+      <div class="accordion" data-single>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="true" aria-controls="gov-1" id="gov-1-btn">Approval policies per channel
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="gov-1" role="region" aria-labelledby="gov-1-btn"><div>
+            Three levels — fully automatic, review the first N posts, or approve every post. Policies are set per channel, so Instagram can be fully automatic while LinkedIn requires sign-off. Any change is written to the audit log with the author's name and timestamp.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="gov-2" id="gov-2-btn">Brand safety guardrails
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="gov-2" role="region" aria-labelledby="gov-2-btn" hidden><div>
+            Upload a banned-claims list, competitor names to avoid, and mandatory disclaimers per regulated category. Any generated output matching the list is blocked before scheduling and flagged to the workspace owner with the triggering phrase highlighted.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="gov-3" id="gov-3-btn">Roles and access
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="gov-3" role="region" aria-labelledby="gov-3-btn" hidden><div>
+            Four built-in roles — owner, manager, contributor and viewer — plus per-workspace scoping for agency setups. Contributors can draft but not publish; viewers can see reports without accessing the asset library.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="gov-4" id="gov-4-btn">Data residency and export
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="gov-4" role="region" aria-labelledby="gov-4-btn" hidden><div>
+            Workspace data is stored in the region you select at onboarding, with India as the default for domestic accounts. Full exports are available on demand in CSV and JSON, and the asset library exports in open image formats so you are never locked in.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="gov-5" id="gov-5-btn">Uptime and support commitments
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="gov-5" role="region" aria-labelledby="gov-5-btn" hidden><div>
+            Growth and Scale plans carry a 99.5% publishing-path availability commitment, measured monthly on successful scheduled publishes. Scale adds a named account manager and an out-of-hours on-call channel for campaign launches.
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <p class="eyebrow" style="color:var(--orange-300)">Walk the platform</p>
+          <h2>Tour all four stages with your own brand loaded</h2>
+          <p>Bring one live channel and one offer. We will generate the assets, connect the account and schedule the first post during the call.</p>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn--primary btn--lg" type="button" data-modal-open="demo-modal">Book a live demo</button>
+          <a class="btn btn--white-outline btn--lg" href="solutions.html#plans">See plans &amp; pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/codelite-autopilot-logo.png" alt="Codelite AutoPilot — AI marketing and sales automation" width="250" height="167" loading="lazy">
+        <p>Codelite Labs builds the marketing and sales engine for growing Indian businesses — brand assets, channel expansion, unified connection and hands-off auto-posting in one workspace.</p>
+        <div class="social-row" style="margin-top:1.1rem">
+          <a href="https://www.linkedin.com" aria-label="Codelite Labs on LinkedIn" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05A4.2 4.2 0 0 1 17.6 8.7c3.1 0 3.9 2 3.9 4.7V21h-4v-6.5c0-1.6-.6-2.6-2-2.6-1.2 0-1.9.8-2.2 1.6-.1.3-.1.7-.1 1V21H10V9Z"/></svg></a>
+          <a href="https://x.com" aria-label="Codelite Labs on X" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3H21l-6.6 7.5L21.5 21h-6l-4.3-5.6L6.2 21H2.7l7-8L2.5 3h6.1l3.9 5.2L17.5 3Zm-1.1 16h1.9L7.7 4.9H5.7L16.4 19Z"/></svg></a>
+          <a href="https://www.instagram.com" aria-label="Codelite Labs on Instagram" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.23 1 .5 1.4.95.45.44.72.84.95 1.44.17.42.36 1.02.42 2.22.06 1.28.07 1.68.07 4.9s0 3.62-.07 4.9c-.06 1.2-.25 1.8-.42 2.22-.23.6-.5 1-.95 1.44-.44.45-.84.72-1.44.95-.42.17-1.02.36-2.22.42-1.28.06-1.68.07-4.9.07s-3.62 0-4.9-.07c-1.2-.06-1.8-.25-2.22-.42a3.9 3.9 0 0 1-1.44-.95 3.9 3.9 0 0 1-.95-1.44c-.17-.42-.36-1.02-.42-2.22C2.2 15.62 2.2 15.22 2.2 12s0-3.62.07-4.9c.06-1.2.25-1.8.42-2.22.23-.6.5-1 .95-1.44A3.9 3.9 0 0 1 5.08 2.5c.42-.17 1.02-.36 2.22-.42C8.58 2.2 8.98 2.2 12 2.2Zm0 3.4a6.4 6.4 0 1 0 0 12.8 6.4 6.4 0 0 0 0-12.8Zm0 10.55a4.15 4.15 0 1 1 0-8.3 4.15 4.15 0 0 1 0 8.3Zm6.65-10.8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="platform.html#design">Design &amp; brand assets</a></li>
+          <li><a href="platform.html#channels">Channel directory</a></li>
+          <li><a href="platform.html#connect">Connect profiles</a></li>
+          <li><a href="platform.html#autopost">Auto-post engine</a></li>
+          <li><a href="platform.html#integrations">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="solutions.html#plans">Plans &amp; pricing</a></li>
+          <li><a href="solutions.html#agency">For agencies</a></li>
+          <li><a href="solutions.html#d2c">For D2C &amp; retail</a></li>
+          <li><a href="solutions.html#enterprise">For B2B &amp; enterprise</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="resources.html#library">Playbook library</a></li>
+          <li><a href="resources.html#roi">ROI calculator</a></li>
+          <li><a href="resources.html#glossary">Glossary</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Talk to us</h5>
+        <div class="footer-contact">
+          <a href="tel:+919949456564"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> +91 99494 56564</a>
+          <a href="mailto:contact@codelitelabs.app"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg> contact@codelitelabs.app</a>
+          <span style="font-size:.8125rem">Mon–Sat · 09:30–18:30 IST</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Codelite Labs. AutoPilot is a product of Codelite Labs, Hyderabad, India.</span>
+      <nav aria-label="Footer legal">
+        <a href="contact.html#support">Support</a>
+        <a href="resources.html#glossary">Glossary</a>
+        <a href="contact.html#office">Office</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="demo-modal" data-open="false" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title" aria-hidden="true">
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div>
+        <span class="badge badge--orange">Live demo · 30 minutes</span>
+        <h2 id="demo-modal-title" style="font-size:var(--step-2);margin:.6rem 0 .2rem">What we will cover</h2>
+        <p style="margin:0;font-size:var(--step--1);color:var(--ink-3)">Screen shared, using your real offer and one live channel.</p>
+      </div>
+      <button class="modal__close" type="button" data-modal-close aria-label="Close dialog"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <ol class="timeline" id="demo-timeline">
+      <li class="timeline__item" data-step="1"><span>Minutes 0–5</span><b>Your funnel audit</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Current spend, cost per lead, close rate and where the leakage sits.</p></li>
+      <li class="timeline__item" data-step="2"><span>Minutes 5–15</span><b>Asset generation on your brand</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">A logo lockup, landing page block and two ad variants generated live.</p></li>
+      <li class="timeline__item" data-step="3"><span>Minutes 15–25</span><b>Channel connection &amp; auto-post</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Link one account, build a 30-day calendar, trigger the first publish.</p></li>
+      <li class="timeline__item" data-step="4"><span>Minutes 25–30</span><b>Pricing fit</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Which plan matches your volume, and a written 30-day plan you keep.</p></li>
+    </ol>
+    <div class="btn-row" style="margin-top:1.25rem">
+      <a class="btn btn--primary" href="contact.html#demo">Continue to booking form <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="btn btn--outline" href="tel:+919949456564">Call 99494 56564</a>
+      <button class="btn btn--ghost" type="button" data-modal-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close image viewer"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <div class="lightbox__inner">
+    <img id="lightbox-img" src="" alt="">
+    <p class="lightbox__cap" id="lightbox-cap"></p>
+  </div>
+</div>
+
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+
+<script src="js/platform.js" defer></script>
+<script src="js/interactive.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codelite AutoPilot — AI Marketing &amp; Sales Automation</title>
+<meta name="description" content="Codelite AutoPilot is an AI marketing and sales engine that generates brand assets, expands to 12 social channels, connects every account and auto-posts on schedule. Call 99494 56564.">
+<meta name="theme-color" content="#0a2145">
+<meta property="og:title" content="Codelite AutoPilot — Put your marketing &amp; sales on AutoPilot">
+<meta property="og:description" content="Brand assets, social expansion, channel integration and auto-posting in one AI engine. See the interactive demo.">
+<meta property="og:image" content="images/codelite-autopilot-logo.png">
+<link rel="icon" href="images/codelite-autopilot-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ TOP BAR ============================ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__note"><span class="dot-live" aria-hidden="true"></span> Engine status: <strong style="color:#fff">all 12 channels connected</strong> · last sync 4 min ago</span>
+    <div class="topbar__meta">
+      <a href="tel:+919949456564">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        99494 56564
+      </a>
+      <a href="mailto:contact@codelitelabs.app">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        contact@codelitelabs.app
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Codelite AutoPilot home">
+      <img class="brand__logo" src="images/codelite-autopilot-logo.png" alt="Codelite AutoPilot" width="250" height="167">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="main-nav__link" href="platform.html">Platform</a></li>
+        <li><a class="main-nav__link" href="solutions.html">Solutions</a></li>
+        <li><a class="main-nav__link" href="resources.html">Resources</a></li>
+        <li><a class="main-nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--outline btn--sm" href="contact.html#sales">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 18.5V4Z"/></svg>
+        Talk to sales
+      </a>
+      <button class="btn btn--primary btn--sm" type="button" data-modal-open="demo-modal" aria-haspopup="dialog">
+        Book a demo
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================== MOBILE DRAWER ========================== -->
+<aside class="drawer" id="site-drawer" data-open="false" aria-label="Mobile navigation" aria-hidden="true">
+  <div class="drawer__head">
+    <strong style="color:var(--navy-900)">Menu</strong>
+    <button class="modal__close" id="drawer-close" type="button" aria-label="Close navigation menu">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer__body">
+    <a class="drawer__link" href="index.html" aria-current="page">Home <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="platform.html">Platform <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="solutions.html">Solutions <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="resources.html">Resources <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+    <a class="drawer__link" href="contact.html">Contact <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+
+    <div style="display:grid;gap:.6rem;margin-top:1.25rem">
+      <button class="btn btn--primary btn--block" type="button" data-modal-open="demo-modal">Book a demo</button>
+      <a class="btn btn--outline btn--block" href="contact.html#sales">Talk to sales</a>
+    </div>
+
+    <div class="drawer__contact">
+      <a href="tel:+919949456564">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        +91 99494 56564
+      </a>
+      <a href="mailto:contact@codelitelabs.app">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        contact@codelitelabs.app
+      </a>
+      <span style="color:var(--ink-3);font-size:.8125rem">Codelite Labs · Hyderabad, India · Mon–Sat 9:30–18:30 IST</span>
+    </div>
+  </div>
+</aside>
+<button class="scrim" id="scrim" data-open="false" type="button" tabindex="-1" aria-label="Close navigation overlay"></button>
+
+<main id="main">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero section--gradient" id="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Codelite AutoPilot · AI marketing &amp; sales automation</p>
+        <h1>Put your marketing &amp; sales on <em>AutoPilot</em>.</h1>
+        <p class="hero__sub">Four connected stages — design your brand assets, expand across 12 social and community channels, connect every account to one engine, then let AutoPilot generate, schedule and publish the content while you close.</p>
+
+        <div class="btn-row">
+          <button class="btn btn--primary btn--lg" type="button" data-modal-open="demo-modal">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 14 9-14 9V3Z"/></svg>
+            Book a live demo
+          </button>
+          <a class="btn btn--outline btn--lg" href="#workflow">See the 4-stage workflow</a>
+        </div>
+
+        <div class="hero__trust">
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> 12 channels, one pipeline</span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Multi-language content</span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Onboarding in 5 working days</span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="console" id="hero-console">
+          <div class="console__bar">
+            <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console__title">autopilot://pipeline/live</span>
+          </div>
+          <div class="console__body">
+            <div class="console__row">
+              <b>Content</b>
+              <span class="console__bar-track"><span class="console__bar-fill" style="--fill:92%"></span></span>
+              <span class="console__status">running</span>
+            </div>
+            <div class="console__row">
+              <b>Leads</b>
+              <span class="console__bar-track"><span class="console__bar-fill" style="--fill:78%"></span></span>
+              <span class="console__status">running</span>
+            </div>
+            <div class="console__row">
+              <b>Sales</b>
+              <span class="console__bar-track"><span class="console__bar-fill" style="--fill:64%"></span></span>
+              <span class="console__status">running</span>
+            </div>
+            <div class="console__row">
+              <b>Payments</b>
+              <span class="console__bar-track"><span class="console__bar-fill" style="--fill:48%"></span></span>
+              <span class="console__status">running</span>
+            </div>
+            <div class="console__row">
+              <b>Insights</b>
+              <span class="console__bar-track"><span class="console__bar-fill" style="--fill:86%"></span></span>
+              <span class="console__status">running</span>
+            </div>
+          </div>
+          <div class="console__foot">
+            <span>Next auto-post: 18:30 IST · 12 channels</span>
+            <span>Drafts queued: <strong style="color:var(--ink)">34</strong></span>
+          </div>
+        </div>
+
+        <figure class="media media--16x9" style="margin-top:1rem">
+          <button class="media-zoom" type="button" data-caption="The unified pipeline: every external profile mapped to the central AutoPilot engine.">
+            <img src="images/ai-dashboard.jpg" alt="AI automation dashboard visualising the AutoPilot content and campaign pipeline" width="960" height="540" loading="eager">
+          </button>
+        </figure>
+        <figcaption class="media-caption">External profiles mapped to the central engine — content, leads, sales, payments and insights in one view.</figcaption>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MARQUEE ============================ -->
+  <section class="marquee" aria-label="Channels AutoPilot publishes to">
+    <h2 class="visually-hidden">Supported channels</h2>
+    <div class="marquee__track" aria-hidden="true">
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg> Facebook Pages</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg> Instagram Business</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5l16 7-16 7 3-7-3-7Z"/></svg> X (Twitter)</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8h.01M12 16v-3a2 2 0 0 1 4 0v3"/></svg> LinkedIn</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg> Pinterest</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="3"/><path d="M9 3v3M15 3v3"/></svg> Threads</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8Z"/><path d="M10 4v4M14 4v4"/></svg> YouTube Shorts</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 14l2.5 5L18 8"/></svg> Google Business</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 9.5 17 14.5"/></svg> Discord</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3 11l6 2 2 6 10-15Z"/></svg> Telegram</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 10h8M8 14h5"/></svg> Slack</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4"/></svg> TikTok Business</span>
+    </div>
+  </section>
+
+  <!-- =========================== STATS BAND ========================= -->
+  <section class="section section--tight" aria-label="Codelite AutoPilot results">
+    <div class="container grid grid-4">
+      <div class="stat reveal">
+        <div class="stat__value" data-count="12" data-suffix="">0</div>
+        <div class="stat__label">Connected channels</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__value" data-count="9.4" data-decimals="1" data-suffix="h">0</div>
+        <div class="stat__label">Weekly hours returned per marketer</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__value" data-count="32" data-suffix="%">0</div>
+        <div class="stat__label">More qualified pipeline on the same spend</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__value" data-count="5" data-suffix=" days">0</div>
+        <div class="stat__label">From kickoff to first auto-post</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== WORKFLOW ========================== -->
+  <section class="section section--alt section--edge" id="workflow">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">The AutoPilot workflow</p>
+        <h2>Four stages from blank page to published pipeline</h2>
+        <p class="lead">AutoPilot is built as an assembly line, not a chat window. Each stage produces a durable asset that the next stage consumes, so nothing is re-created by hand twice.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step__num" aria-hidden="true">1</span>
+          <h4>Design — brand asset generation</h4>
+          <p>Enter your business name, choose a deliverable from the dropdown and drop a brief. AutoPilot produces logos, website landing pages, business cards, note cards, digital business cards, letterheads, email signatures, invoices and short animations in your brand palette.</p>
+        </article>
+        <article class="step step--accent reveal">
+          <span class="step__num" aria-hidden="true">2</span>
+          <h4>Create — social media expansion</h4>
+          <p>Establish your presence across Facebook Pages, Instagram Business, X, LinkedIn, Pinterest, Threads, TikTok Business, Google Business, YouTube Shorts, Discord, Telegram and Slack from one creation surface.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num" aria-hidden="true">3</span>
+          <h4>Connect — channel integration</h4>
+          <p>The Connect Profiles dashboard authenticates and links each account. AutoPilot then maps all twelve profiles to the central engine so the pipeline can read performance and write content back.</p>
+        </article>
+        <article class="step step--accent reveal">
+          <span class="step__num" aria-hidden="true">4</span>
+          <h4>Auto-post — the execution engine</h4>
+          <p>Activate triggers and AutoPilot generates posts, reels, captions and an industry-specific calendar, publishes on schedule, produces SEO and ad copy variants, and localises output per market.</p>
+        </article>
+      </div>
+
+      <div class="split split--wide-left" style="margin-top:clamp(2rem,4vw,3.5rem)">
+        <figure style="margin:0">
+          <button class="media-zoom" type="button" data-caption="Developer's guide: the four stages of the Codelite AI marketing engine workflow.">
+            <img src="images/codelite-workflow-guide.png" alt="Developer's guide diagram showing design, create, connect and auto-post stages of the Codelite AI marketing engine" width="1024" height="563" style="border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff" loading="lazy">
+          </button>
+          <figcaption class="media-caption">Click the diagram to enlarge the full workflow reference.</figcaption>
+        </figure>
+        <div class="stack">
+          <h3>What lands in your workspace on day one</h3>
+          <div class="feature-row">
+            <span class="icon icon--orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg></span>
+            <div><h4>30-day content calendar</h4><p>Pre-filled with industry-specific post types, captions and posting windows you can edit inline.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9M10 18V5M16 18v-6M22 18H2"/></svg></span>
+            <div><h4>Live channel telemetry</h4><p>Reach, saves, clicks and cost per lead per channel, reconciled nightly against your ad accounts.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon icon--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+            <div><h4>SEO &amp; ad copy lab</h4><p>Keyword-clustered blog outlines plus Meta and Google ad variants with headline testing notes.</p></div>
+          </div>
+          <div class="feature-row">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
+            <div><h4>Multi-language output</h4><p>English, Hindi, Telugu, Tamil, Marathi and Kannada localisation for regional campaigns.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CAPABILITIES ========================= -->
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Five working modules</p>
+        <h2>Content. Leads. Sales. Payments. Insights.</h2>
+        <p class="lead">Every module reads and writes to the same workspace, so a caption you generate on Monday is the asset the sales team quotes on Thursday and the insight report explains on the 1st.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <span class="icon icon--orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M8 12h8M8 16h5"/></svg></span>
+          <h3>Content engine</h3>
+          <p>Generates posts, reels, carousels, captions and long-form articles from a single brief, then keeps a reusable library of brand-approved assets.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Brand tone and palette locking</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> 34 scheduled drafts per cycle</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Asset versions with rollback</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="icon icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11.2A3 3 0 1 0 17 5m4.5 15a5.5 5.5 0 0 0-4-5.3"/></svg></span>
+          <h3>Lead capture &amp; scoring</h3>
+          <p>Forms, landing pages and DM replies flow into one inbox with intent scoring, so your team works the top decile first.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Intent scoring on 14 signals</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> WhatsApp and email follow-ups</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Duplicate and spam rejection</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="icon icon--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9 11l4 3 8-8"/><path d="M15 6h6v6"/></svg></span>
+          <h3>Sales acceleration</h3>
+          <p>Quotes, proposals and follow-up sequences assemble themselves from the lead record and your rate card.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Proposal templates with GST fields</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Nurture sequences by segment</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Win/loss reason capture</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></svg></span>
+          <h3>Payments &amp; billing</h3>
+          <p>Collect retainers and project fees on schedule with GST-compliant invoices, reminders and reconciliation.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-invoices from closed deals</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Failed-payment recovery nudges</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Revenue by channel reporting</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="icon icon--orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V6M10 20v-8M16 20V9M22 20H2"/></svg></span>
+          <h3>Insights &amp; attribution</h3>
+          <p>One attribution model across paid, organic and community, with weekly narrative summaries written for the leadership deck.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Cost per qualified lead</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Creative fatigue detection</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Export to CSV and Sheets</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="icon icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M4.2 7.2l2.1 2.1M17.7 14.7l2.1 2.1M3 12h3M18 12h3M4.2 16.8l2.1-2.1M17.7 9.3l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+          <h3>Automation triggers</h3>
+          <p>Visual rules fire on schedule, on performance thresholds or on CRM events — no engineer required.</p>
+          <ul class="card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> If CPL rises 20%, pause creative</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Re-use winners after 21 days</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Slack alert on stalled deals</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= INDUSTRY TABS ======================== -->
+  <section class="section section--alt section--edge" id="industries">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Built for real operating realities</p>
+        <h2>Choose the way your team actually sells</h2>
+        <p class="lead">AutoPilot ships with pre-tuned content pillars, follow-up cadences and reporting views for each engagement model. Switch tabs to see the configuration.</p>
+      </div>
+
+      <div data-tabs>
+        <div class="tabs" role="tablist" aria-label="Engagement models">
+          <button class="tab" role="tab" id="tab-sme" aria-controls="panel-sme" aria-selected="true">Growing SME</button>
+          <button class="tab" role="tab" id="tab-agency" aria-controls="panel-agency" aria-selected="false" tabindex="-1">Marketing agency</button>
+          <button class="tab" role="tab" id="tab-d2c" aria-controls="panel-d2c" aria-selected="false" tabindex="-1">D2C &amp; retail</button>
+          <button class="tab" role="tab" id="tab-b2b" aria-controls="panel-b2b" aria-selected="false" tabindex="-1">B2B services</button>
+        </div>
+
+        <div class="tabpanel" id="panel-sme" role="tabpanel" aria-labelledby="tab-sme" tabindex="0">
+          <div class="split">
+            <div class="stack">
+              <h3>One marketer, a full quarter of content</h3>
+              <p>Most SMEs run marketing as a side-of-desk job. AutoPilot takes the calendar, the design work and the follow-ups off that person's plate so the pipeline keeps moving on busy weeks.</p>
+              <div class="grid grid-2">
+                <div class="stat"><div class="stat__value" data-count="26" data-suffix=" h">0</div><div class="stat__label">Monthly hours saved</div></div>
+                <div class="stat"><div class="stat__value" data-count="3.4" data-decimals="1" data-suffix="×">0</div><div class="stat__label">Return on plan cost</div></div>
+              </div>
+              <ul class="card__list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Owner-approved tone-of-voice profile</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Festival and season-aware Indian calendar</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Single-tap WhatsApp enquiry follow-up</li>
+              </ul>
+            </div>
+            <figure class="media media--4x3" style="margin:0">
+              <button class="media-zoom" type="button" data-caption="An operations team running marketing alongside delivery.">
+                <img src="images/team-collaboration.jpg" alt="Small business team collaborating around a table while reviewing campaign content" width="800" height="600" loading="lazy">
+              </button>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabpanel" id="panel-agency" role="tabpanel" aria-labelledby="tab-agency" tabindex="0" hidden>
+          <div class="split">
+            <div class="stack">
+              <h3>White-label output for every client account</h3>
+              <p>Run 8 to 40 client workspaces from one console. Each workspace keeps its own brand kit, approval chain and reporting link, so your account managers stop rebuilding the same deck.</p>
+              <div class="grid grid-2">
+                <div class="stat"><div class="stat__value" data-count="40" data-suffix=" accounts">0</div><div class="stat__label">Per console licence</div></div>
+                <div class="stat"><div class="stat__value" data-count="62" data-suffix="%">0</div><div class="stat__label">Less production time per client</div></div>
+              </div>
+              <ul class="card__list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> White-label client portals</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Two-step approval before publish</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Per-seat role permissions</li>
+              </ul>
+            </div>
+            <figure class="media media--4x3" style="margin:0">
+              <button class="media-zoom" type="button" data-caption="Agency teams managing multiple client workspaces side by side.">
+                <img src="images/agency-team.jpg" alt="Agency professionals coordinating multiple client dashboards on monitors" width="800" height="600" loading="lazy">
+              </button>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabpanel" id="panel-d2c" role="tabpanel" aria-labelledby="tab-d2c" tabindex="0" hidden>
+          <div class="split">
+            <div class="stack">
+              <h3>Creative volume that keeps pace with ad spend</h3>
+              <p>When a creative fatigues in nine days, you need replacements ready. AutoPilot turns your top-performing hooks into reels, carousels and static variants in the same session.</p>
+              <div class="grid grid-2">
+                <div class="stat"><div class="stat__value" data-count="48" data-suffix="/mo">0</div><div class="stat__label">Creative variants generated</div></div>
+                <div class="stat"><div class="stat__value" data-count="21" data-suffix="%">0</div><div class="stat__label">Lower cost per purchase</div></div>
+              </div>
+              <ul class="card__list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Hook library with win-rate ranking</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Shopify catalogue sync</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Regional language ad variants</li>
+              </ul>
+            </div>
+            <figure class="media media--4x3" style="margin:0">
+              <button class="media-zoom" type="button" data-caption="Performance creative production for retail and D2C brands.">
+                <img src="images/social-strategy.jpg" alt="Social media creative planning laid out on a desk with campaign assets" width="800" height="600" loading="lazy">
+              </button>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabpanel" id="panel-b2b" role="tabpanel" aria-labelledby="tab-b2b" tabindex="0" hidden>
+          <div class="split">
+            <div class="stack">
+              <h3>Long cycles, systematically worked</h3>
+              <p>Attribution across a 90-day cycle, nurture sequences that respect buying committees, and content mapped to each stage of the funnel.</p>
+              <div class="grid grid-2">
+                <div class="stat"><div class="stat__value" data-count="90" data-suffix="-day">0</div><div class="stat__label">Attribution window</div></div>
+                <div class="stat"><div class="stat__value" data-count="18" data-suffix="%">0</div><div class="stat__label">Higher meeting-to-opportunity rate</div></div>
+              </div>
+              <ul class="card__list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Buying-committee contact mapping</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Stage-gated content tracks</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> CRM stage sync (two-way)</li>
+              </ul>
+            </div>
+            <figure class="media media--4x3" style="margin:0">
+              <button class="media-zoom" type="button" data-caption="Reporting and attribution review for long B2B sales cycles.">
+                <img src="images/seo-reporting.png" alt="Business analytics dashboard with funnel and channel performance charts" width="800" height="600" loading="lazy">
+              </button>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CAROUSEL / PROOF ===================== -->
+  <section class="section" id="proof">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Inside the workspace</p>
+        <h2>See the surfaces your team works in every day</h2>
+        <p class="lead">Four screens carry 90% of the daily work. Use the arrows, dots or swipe to move through them.</p>
+      </div>
+
+      <div class="carousel" data-carousel data-autoplay role="region" aria-roledescription="carousel" aria-label="AutoPilot workspace screens">
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+            <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
+              <img src="images/ai-dashboard.jpg" alt="AutoPilot pipeline dashboard with automation status and channel performance" width="960" height="540" loading="lazy">
+              <div class="carousel__caption"><strong>Pipeline control room</strong><span>Trigger status, queued drafts and channel health in a single view.</span></div>
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
+              <img src="images/social-strategy.jpg" alt="Social media content planning workspace with posts and captions" width="960" height="540" loading="lazy">
+              <div class="carousel__caption"><strong>Content studio</strong><span>Generate, edit and approve posts and reels from one brief.</span></div>
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
+              <img src="images/data-analysis.jpg" alt="Analytics dashboard showing campaign KPIs and data visualisations" width="960" height="540" loading="lazy">
+              <div class="carousel__caption"><strong>Insights &amp; attribution</strong><span>Cost per qualified lead and creative fatigue, reconciled nightly.</span></div>
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
+              <img src="images/content-flatlay.png" alt="Campaign assets and planning notes arranged for a content sprint" width="960" height="540" loading="lazy">
+              <div class="carousel__caption"><strong>Asset library</strong><span>Every approved logo, template and long-form draft, versioned.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__controls">
+          <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous screen">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="carousel__btn" type="button" data-carousel-next aria-label="Next screen">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="carousel__dots" role="group" aria-label="Choose a screen"></div>
+        <p class="visually-hidden" id="carousel-live" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== ROI CALC ========================== -->
+  <section class="section section--alt section--edge" id="roi">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">ROI calculator</p>
+        <h2>Model your own numbers before you talk to us</h2>
+        <p class="lead">Move the sliders to match your current funnel. The model uses conservative assumptions: a 32% lift in qualified leads, an 18% better close rate and 62% less manual production time.</p>
+      </div>
+
+      <div class="panel" id="roi-calculator">
+        <div class="calc">
+          <div class="stack" style="--stack-gap:1.15rem">
+            <div class="calc__field">
+              <div class="row"><label for="calc-spend">Monthly ad &amp; content spend</label><span class="calc__value" id="calc-spend-out">₹1,50,000</span></div>
+              <input type="range" id="calc-spend" min="25000" max="1500000" step="5000" value="150000" aria-describedby="calc-spend-help">
+              <span class="hint" id="calc-spend-help">Total paid media plus production cost per month.</span>
+            </div>
+            <div class="calc__field">
+              <div class="row"><label for="calc-cpl">Current cost per lead</label><span class="calc__value" id="calc-cpl-out">₹320</span></div>
+              <input type="range" id="calc-cpl" min="50" max="2000" step="10" value="320">
+              <span class="hint">Blended across all channels.</span>
+            </div>
+            <div class="calc__field">
+              <div class="row"><label for="calc-closure">Current close rate</label><span class="calc__value" id="calc-closure-out">22%</span></div>
+              <input type="range" id="calc-closure" min="2" max="70" step="1" value="22">
+              <span class="hint">Lead to paid customer.</span>
+            </div>
+            <div class="calc__field">
+              <div class="row"><label for="calc-value">Average deal value</label><span class="calc__value" id="calc-value-out">₹48,000</span></div>
+              <input type="range" id="calc-value" min="5000" max="1000000" step="1000" value="48000">
+              <span class="hint">Lifetime or first-order value per customer.</span>
+            </div>
+            <div class="calc__field">
+              <div class="row"><label for="calc-hours">Manual marketing hours / week</label><span class="calc__value" id="calc-hours-out">26 h / week</span></div>
+              <input type="range" id="calc-hours" min="2" max="80" step="1" value="26">
+              <span class="hint">Design, captions, scheduling, reporting.</span>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn--outline btn--sm" type="button" id="calc-reset">Reset scenario</button>
+              <button class="btn btn--primary btn--sm" type="button" data-modal-open="sales-modal">Send this scenario to sales</button>
+            </div>
+          </div>
+
+          <div class="calc__out">
+            <div class="calc__big">
+              <span>Influenced revenue per month</span>
+              <b id="calc-result-revenue">₹0</b>
+            </div>
+            <div class="calc__grid">
+              <div class="calc__cell"><b id="calc-result-leads">0</b><span>Leads per month</span></div>
+              <div class="calc__cell"><b id="calc-result-qualified">0</b><span>Qualified leads</span></div>
+              <div class="calc__cell"><b id="calc-result-pipeline">₹0</b><span>Weighted pipeline value</span></div>
+              <div class="calc__cell"><b id="calc-result-saved">0 h</b><span>Time returned weekly</span></div>
+              <div class="calc__cell"><b id="calc-result-roi">₹0</b><span>Net monthly gain</span></div>
+              <div class="calc__cell"><b id="calc-result-efficiency">0×</b><span>Return on plan cost</span></div>
+            </div>
+            <div class="calc__chart" id="calc-chart" aria-hidden="true"></div>
+            <p class="hint" id="calc-summary" aria-live="polite">Adjust the sliders to generate a scenario.</p>
+          </div>
+        </div>
+        <p class="note" style="margin-top:1.25rem">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Estimates are directional and based on anonymised results across comparable Codelite deployments. Your actual outcome depends on offer strength, sales capacity and market. Net gain assumes the Growth plan at ₹24,900/month and ₹850/hour blended marketing cost.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TESTIMONIALS ======================== -->
+  <section class="section" id="customers">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Customer evidence</p>
+        <h2>Teams that stopped rebuilding the same campaign</h2>
+      </div>
+      <div class="grid grid-3">
+        <figure class="card reveal" style="margin:0">
+          <div class="chip-row" style="margin-bottom:.35rem">
+            <span class="badge badge--green">Verified</span><span class="badge">Agency · 22 accounts</span>
+          </div>
+          <blockquote style="margin:0;color:var(--ink);font-weight:600;font-size:var(--step-1)">“We cut production time per client from eleven hours to four. The approval chain is what sold our account managers — nothing publishes without a second pair of eyes.”</blockquote>
+          <figcaption style="display:flex;gap:.75rem;align-items:center;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)">
+            <span class="icon icon--purple" aria-hidden="true">SK</span>
+            <div><b style="display:block;color:var(--ink);font-size:var(--step--1)">Sneha Kulkarni</b><span style="font-size:.8125rem;color:var(--ink-3)">Delivery Head, Brightline Digital · Pune</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="card reveal" style="margin:0">
+          <div class="chip-row" style="margin-bottom:.35rem">
+            <span class="badge badge--green">Verified</span><span class="badge">D2C · ₹40 Cr GMV</span>
+          </div>
+          <blockquote style="margin:0;color:var(--ink);font-weight:600;font-size:var(--step-1)">“Creative fatigue used to cost us a week. Now a losing hook is replaced the same afternoon and our cost per purchase is down a fifth.”</blockquote>
+          <figcaption style="display:flex;gap:.75rem;align-items:center;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)">
+            <span class="icon icon--orange" aria-hidden="true">AR</span>
+            <div><b style="display:block;color:var(--ink);font-size:var(--step--1)">Arjun Reddy</b><span style="font-size:.8125rem;color:var(--ink-3)">Growth Lead, Kettle &amp; Co · Hyderabad</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="card reveal" style="margin:0">
+          <div class="chip-row" style="margin-bottom:.35rem">
+            <span class="badge badge--green">Verified</span><span class="badge">B2B · 90-day cycle</span>
+          </div>
+          <blockquote style="margin:0;color:var(--ink);font-weight:600;font-size:var(--step-1)">“Ninety-day attribution changed how we fund channels. We stopped arguing about last-click and started funding the community channels that actually open deals.”</blockquote>
+          <figcaption style="display:flex;gap:.75rem;align-items:center;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)">
+            <span class="icon icon--green" aria-hidden="true">MF</span>
+            <div><b style="display:block;color:var(--ink);font-size:var(--step--1)">Meera Fernandes</b><span style="font-size:.8125rem;color:var(--ink-3)">VP Marketing, Northbridge Systems · Bengaluru</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ GALLERY ========================== -->
+  <section class="section section--alt section--edge" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Deliverable library</p>
+        <h2>Assets AutoPilot generates out of the box</h2>
+        <p class="lead">Ten core deliverable families, each with brand-locked templates. Open any tile for the full-size reference.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Logo systems and lockup variants generated from your business name.">
+            <img src="images/software-office.jpg" alt="Logo and brand identity work shown on a studio screen" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Logo &amp; lockups<span>12 variants, 3 formats</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Landing page compositions with copy blocks and hero variants.">
+            <img src="images/ai-dashboard.jpg" alt="Website landing page layout displayed on screen" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Website landing pages<span>Responsive, copy included</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Business cards, note cards and digital business cards.">
+            <img src="images/content-flatlay.png" alt="Printed stationery and note cards arranged on a desk" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Business &amp; note cards<span>Print-ready CMYK</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Letterheads, email signatures and invoice templates.">
+            <img src="images/seo-reporting.png" alt="Document and report templates displayed for review" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Letterhead &amp; invoices<span>GST-compliant fields</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Short animations and reels generated from static brand assets.">
+            <img src="images/social-strategy.jpg" alt="Animated social post storyboards laid out for production" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Animations &amp; reels<span>9:16, 1:1, 16:9</span></figcaption>
+        </figure>
+        <figure>
+          <button class="media-zoom media media--1x1" type="button" data-caption="Insight dashboards and monthly performance narratives.">
+            <img src="images/data-analysis.jpg" alt="Performance insight dashboard with charts" width="600" height="600" loading="lazy">
+          </button>
+          <figcaption>Insight reports<span>Weekly and monthly</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FAQ ============================ -->
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <p class="eyebrow">Questions, answered</p>
+        <h2>What teams ask before starting</h2>
+      </div>
+      <div class="accordion" data-single>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="true" aria-controls="faq-1" id="faq-1-btn">How long does onboarding take?
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div>
+            Five working days for a standard workspace: day 1 brand kit and asset import, day 2 channel authentication, day 3 tone and pillar setup, day 4 calendar generation and approval, day 5 first auto-post. Multi-workspace agency setups take eight to ten days including portal branding.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">Do I keep ownership of the generated content?
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden><div>
+            Yes. Every asset generated inside your workspace is yours, including logos, templates and copy. Source project files are exportable, and if you leave the platform we hand over the asset library in open formats before the licence ends.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Which channels can AutoPilot publish to today?
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden><div>
+            Twelve live integrations: Facebook Pages, Instagram Business, X (Twitter), LinkedIn, Pinterest, Threads, TikTok Business, Google Business, YouTube Shorts, Discord, Telegram and Slack. Google Ads and Meta Ads managers connect for reporting. The full directory with connection status is on the Platform page.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">How do you handle approvals and brand safety?
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden><div>
+            You choose the control level per channel: fully automatic, first-N-post review, or every-post approval. AutoPilot also enforces a banned-claims list and flags any output that contradicts your compliance rules before scheduling.
+          </div></div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">Is there support in Indian languages and time zones?
+            <svg class="acc-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button></h3>
+          <div class="acc-panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden><div>
+            Content generation supports English, Hindi, Telugu, Tamil, Marathi and Kannada, and the scheduling engine respects Indian Standard Time by default. Support hours are Mon–Sat 09:30–18:30 IST, with an on-call channel on the Scale plan.
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CTA ============================= -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <p class="eyebrow" style="color:var(--orange-300)">Next step</p>
+          <h2>See AutoPilot running on your own brand</h2>
+          <p>Thirty minutes, screen shared, using your real offer and one live channel. You leave with a 30-day content plan whether or not you buy.</p>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn--primary btn--lg" type="button" data-modal-open="demo-modal">Book a live demo</button>
+          <a class="btn btn--white-outline btn--lg" href="contact.html#sales">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/codelite-autopilot-logo.png" alt="Codelite AutoPilot — AI marketing and sales automation" width="250" height="167" loading="lazy">
+        <p>Codelite Labs builds the marketing and sales engine for growing Indian businesses — brand assets, channel expansion, unified connection and hands-off auto-posting in one workspace.</p>
+        <div class="social-row" style="margin-top:1.1rem">
+          <a href="https://www.linkedin.com" aria-label="Codelite Labs on LinkedIn" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05A4.2 4.2 0 0 1 17.6 8.7c3.1 0 3.9 2 3.9 4.7V21h-4v-6.5c0-1.6-.6-2.6-2-2.6-1.2 0-1.9.8-2.2 1.6-.1.3-.1.7-.1 1V21H10V9Z"/></svg></a>
+          <a href="https://x.com" aria-label="Codelite Labs on X" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3H21l-6.6 7.5L21.5 21h-6l-4.3-5.6L6.2 21H2.7l7-8L2.5 3h6.1l3.9 5.2L17.5 3Zm-1.1 16h1.9L7.7 4.9H5.7L16.4 19Z"/></svg></a>
+          <a href="https://www.instagram.com" aria-label="Codelite Labs on Instagram" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.23 1 .5 1.4.95.45.44.72.84.95 1.44.17.42.36 1.02.42 2.22.06 1.28.07 1.68.07 4.9s0 3.62-.07 4.9c-.06 1.2-.25 1.8-.42 2.22-.23.6-.5 1-.95 1.44-.44.45-.84.72-1.44.95-.42.17-1.02.36-2.22.42-1.28.06-1.68.07-4.9.07s-3.62 0-4.9-.07c-1.2-.06-1.8-.25-2.22-.42a3.9 3.9 0 0 1-1.44-.95 3.9 3.9 0 0 1-.95-1.44c-.17-.42-.36-1.02-.42-2.22C2.2 15.62 2.2 15.22 2.2 12s0-3.62.07-4.9c.06-1.2.25-1.8.42-2.22.23-.6.5-1 .95-1.44A3.9 3.9 0 0 1 5.08 2.5c.42-.17 1.02-.36 2.22-.42C8.58 2.2 8.98 2.2 12 2.2Zm0 3.4a6.4 6.4 0 1 0 0 12.8 6.4 6.4 0 0 0 0-12.8Zm0 10.55a4.15 4.15 0 1 1 0-8.3 4.15 4.15 0 0 1 0 8.3Zm6.65-10.8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="platform.html#design">Design &amp; brand assets</a></li>
+          <li><a href="platform.html#channels">Channel directory</a></li>
+          <li><a href="platform.html#connect">Connect profiles</a></li>
+          <li><a href="platform.html#autopost">Auto-post engine</a></li>
+          <li><a href="platform.html#integrations">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="solutions.html#plans">Plans &amp; pricing</a></li>
+          <li><a href="solutions.html#agency">For agencies</a></li>
+          <li><a href="solutions.html#d2c">For D2C &amp; retail</a></li>
+          <li><a href="solutions.html#enterprise">For B2B &amp; enterprise</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="resources.html#library">Playbook library</a></li>
+          <li><a href="resources.html#roi">ROI calculator</a></li>
+          <li><a href="resources.html#glossary">Glossary</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Talk to us</h5>
+        <div class="footer-contact">
+          <a href="tel:+919949456564">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            +91 99494 56564
+          </a>
+          <a href="mailto:contact@codelitelabs.app">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            contact@codelitelabs.app
+          </a>
+          <span style="font-size:.8125rem">Mon–Sat · 09:30–18:30 IST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Codelite Labs. AutoPilot is a product of Codelite Labs, Hyderabad, India.</span>
+      <nav aria-label="Footer legal">
+        <a href="contact.html#support">Support</a>
+        <a href="resources.html#glossary">Glossary</a>
+        <a href="contact.html#office">Office</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================= MODALS ============================ -->
+<div class="modal" id="demo-modal" data-open="false" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title" aria-hidden="true">
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div>
+        <span class="badge badge--orange">Live demo · 30 minutes</span>
+        <h2 id="demo-modal-title" style="font-size:var(--step-2);margin:.6rem 0 .2rem">What we will cover</h2>
+        <p style="margin:0;font-size:var(--step--1);color:var(--ink-3)">Screen shared, using your real offer and one live channel.</p>
+      </div>
+      <button class="modal__close" type="button" data-modal-close aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ol class="timeline" id="demo-timeline">
+      <li class="timeline__item" data-step="1"><span>Minutes 0–5</span><b>Your funnel audit</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Current spend, cost per lead, close rate and where the leakage sits.</p></li>
+      <li class="timeline__item" data-step="2"><span>Minutes 5–15</span><b>Asset generation on your brand</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">A logo lockup, landing page block and two ad variants generated live.</p></li>
+      <li class="timeline__item" data-step="3"><span>Minutes 15–25</span><b>Channel connection &amp; auto-post</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Link one account, build a 30-day calendar, trigger the first publish.</p></li>
+      <li class="timeline__item" data-step="4"><span>Minutes 25–30</span><b>Pricing fit</b><p style="margin:.2rem 0 0;font-size:var(--step--1);color:var(--ink-3)">Which plan matches your volume, and a written 30-day plan you keep.</p></li>
+    </ol>
+    <div class="btn-row" style="margin-top:1.25rem">
+      <a class="btn btn--primary" href="contact.html#demo">Continue to booking form
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--outline" href="tel:+919949456564">Call 99494 56564</a>
+      <button class="btn btn--ghost" type="button" data-modal-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="sales-modal" data-open="false" role="dialog" aria-modal="true" aria-labelledby="sales-modal-title" aria-hidden="true">
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div>
+        <span class="badge badge--orange">Talk to sales</span>
+        <h2 id="sales-modal-title" style="font-size:var(--step-2);margin:.6rem 0 .2rem">Send us your requirement</h2>
+        <p style="margin:0;font-size:var(--step--1);color:var(--ink-3)">Short form, no obligation. We reply within one business day.</p>
+      </div>
+      <button class="modal__close" type="button" data-modal-close aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <form data-lead-form data-kind="sales" id="sales-modal-form" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="sm-name">Full name</label>
+          <input class="input" id="sm-name" name="full_name" type="text" required autocomplete="name" data-autofocus>
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="sm-email">Work email</label>
+          <input class="input" id="sm-email" name="email" type="email" required autocomplete="email">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="sm-phone">Phone / WhatsApp</label>
+          <input class="input" id="sm-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 99494 56564">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="sm-company">Company</label>
+          <input class="input" id="sm-company" name="company" type="text" autocomplete="organization">
+          <span class="err"></span>
+        </div>
+        <div class="field field--full">
+          <label for="sm-interest">Primary interest</label>
+          <select class="select" id="sm-interest" name="interest" required>
+            <option value="">Select an option</option>
+            <option value="starter">Starter plan — single brand</option>
+            <option value="growth">Growth plan — multi-channel</option>
+            <option value="scale">Scale plan — multi-market</option>
+            <option value="agency">Agency white-label</option>
+            <option value="services">Done-with-you services</option>
+            <option value="other">Something else</option>
+          </select>
+          <span class="err"></span>
+        </div>
+        <div class="field field--full">
+          <label for="sm-message">What should AutoPilot fix first?</label>
+          <textarea class="textarea" id="sm-message" name="message" rows="4"></textarea>
+          <span class="err"></span>
+        </div>
+      </div>
+      <div class="note form-status" data-form-status hidden></div>
+      <div class="btn-row" style="margin-top:1rem">
+        <button class="btn btn--primary" type="submit">Send request</button>
+        <button class="btn btn--ghost" type="button" data-modal-close>Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close image viewer">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="lightbox__inner">
+    <img id="lightbox-img" src="" alt="">
+    <p class="lightbox__cap" id="lightbox-cap"></p>
+  </div>
+</div>
+
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+
+<script src="js/interactive.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
